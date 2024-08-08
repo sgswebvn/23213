@@ -1,0 +1,135 @@
+@include "nib";
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.thea {
+  margin-bottom: 15px;
+  text-direction: none;
+  color: black;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #353535;
+}
+.Modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal-box {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.UserModal-header {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to left, #cc2b5e, #753a88);
+  min-height: 212px;
+  align-items: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.UserModal-header:before {
+  content: "";
+  border-bottom: 182px solid #fff;
+  border-left: 390px solid transparent;
+  position: absolute;
+  z-index: 0;
+}
+.UserModal-edit,
+.UserModal-delete,
+.UserModal-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.UserModal-thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.UserModal-edit,
+.UserModal-delete {
+  flex: 1;
+}
+.UserModal-edit button,
+.UserModal-delete button {
+  font-size: 1em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  background: transparent;
+  width: 3em;
+  height: 3em;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.UserModal-edit button {
+  color: #fff;
+  border-color: #fff;
+}
+.UserModal-delete button {
+  color: #000;
+  border-color: #000;
+}
+.UserModal-thumb {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 50%;
+}
+.UserModal-thumb:before {
+  content: "";
+  z-index: -1;
+  width: 180px;
+  height: 180px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #353535 #353535 #fff #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(110deg);
+}
+.UserModal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px 30px;
+}
+.UserModal-name {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+.UserModal-status {
+  background: #46bc99;
+  color: #fff;
+  border-radius: 1em;
+  margin-top: 0.75em;
+  padding: 0.333em 1.25em;
+}
+.UserModal-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.25em 1em;
+}
+.UserModal-field--text {
+  border-width: 0 0 1px 0;
+  border-color: #353535;
+  border-style: solid;
+}
+.UserModal .Modal-box {
+  width: 390px;
+  overflow: hidden;
+}

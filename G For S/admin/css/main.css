@@ -1,0 +1,100 @@
+table,
+th,
+tr,
+td {
+  padding: 10px;
+  border-bottom: 0.8px solid rgb(167, 162, 162);
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+h1 {
+  color: black; /* Đặt màu chữ là đen */
+  font-weight: bold; /* In đậm */
+  text-transform: uppercase; /* In hoa */
+}
+
+th {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  /* text-direction: ; */
+}
+.edittd p {
+  /* height: 100px; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Số dòng muốn hiển thị trước khi ngắt */
+  overflow: hidden;
+}
+td {
+  width: 200px;
+}
+table {
+  width: 100%;
+  color: black;
+}
+input {
+  font-family: "Courier New", Courier, monospace;
+
+  padding: 6px;
+  /* border: 2px solid rgb(167, 162, 162); */
+}
+/* input[type="submit"] {
+  font-family: "Courier New", Courier, monospace;
+
+  border: 2px solid rgb(252, 60, 60);
+  color: red;
+  background-color: rgb(251, 251, 251);
+} */
+
+.cont {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-evenly;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia thành 2 cột có chiều rộng bằng nhau */
+  grid-gap: 30px;
+}
+.imgedit {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+}
+.imgremove {
+  width: 30px;
+  height: 30px;
+}
+.imgsp {
+  width: 100px;
+  height: 100px;
+}
+.addcmt {
+  width: 300px;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  /* box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff; */
+  transition: 0.3s;
+}
+
+.addsend {
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: rgb(4, 138, 255);
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  color: #e0e1e4;
+  font-family: "Poppins", sans-serif;
+}
